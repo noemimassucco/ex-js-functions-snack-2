@@ -105,6 +105,18 @@ function creaContatoreAutomatico(intervalloTempo) {
 }
 
 const avvia = creaContatoreAutomatico(1000);
-avvia();
 
-//
+
+//SNACK 7
+
+function eseguiEferma(avvio, stop, messaggio) {
+    return function() {
+        const intervallo = setInterval(() => {
+            console.log(messaggio);
+        }, avvio);
+        setTimeout(() => clearInterval(intervallo),stop);
+    }
+}
+
+const avvio = eseguiEferma(1000, 5000, "Ciao!");
+avvio();
