@@ -85,3 +85,26 @@ function stampaMessaggio(messaggio) {
 
 const intervallo = stampaMessaggio("Ciao!");
 clearInterval(intervallo);
+
+//=======================================================================
+
+//snack 6
+
+//Definisci una funzione creaContatoreAutomatico che accetta un intervallo
+//  di tempo e restituisce una funzione che avvia un setInterval,
+//  incrementando un contatore e stampandolo.
+
+function creaContatoreAutomatico(intervalloTempo) {
+    let contatore = 0;
+    return function() {
+        setInterval(() => {
+            contatore++;
+            console.log(contatore);
+        }, intervalloTempo);
+    }
+}
+
+const avvia = creaContatoreAutomatico(1000);
+avvia();
+
+//
