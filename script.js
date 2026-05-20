@@ -38,4 +38,17 @@ const sommaArrow = (numero1, numero2) => {
  const numeroQuadrato = (numero) => {
     return numero * numero 
  }
- console.log(numeroQuadrato(67))
+
+//==========================================================================================
+
+//snack3
+
+//Definisci una funzione eseguiOperazione 
+// che accetta tre parametri: due numeri e una funzione operatore 
+// (callback). La funzione deve eseguire l'operazione fornita sui due numeri.
+
+const moltiplica = (a, b,) => a * b;
+
+const eseguiOperazione = (a, b, operazione) => operazione(a, b)
+
+
