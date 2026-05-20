@@ -1,4 +1,7 @@
-//Crea una funzione dichiarativa chiamata somma che 
+//SNACK 1
+
+
+//Crea una funzione dichiarativa chiamata somma that 
 // accetta due numeri e restituisce la loro somma.
 
 const numero1 = 7;
@@ -22,4 +25,17 @@ const sommaArrow = (numero1, numero2) => {
     return numero1 + numero2;
 }   
 
-console.log(sommaAnonima(numero1, numero2)); // Output: 7
+
+
+//------------------------------------------------------------------------------------
+
+//SNACK2
+
+//Crea una arrow function che calcola il quadrato di un numero.
+//Definisci una funzione chiamata quadrato
+ //che accetta un numero e restituisce il suo quadrato in una sola riga.
+
+ const numeroQuadrato = (numero) => {
+    return numero * numero 
+ }
+ console.log(numeroQuadrato(67))
