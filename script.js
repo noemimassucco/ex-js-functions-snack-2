@@ -52,3 +52,20 @@ const moltiplica = (a, b,) => a * b;
 const eseguiOperazione = (a, b, operazione) => operazione(a, b)
 
 
+//=========================================================================================
+
+//snack4
+
+//Scrivi una funzione creaTimer che accetta un tempo (in ms)
+//  e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
+
+function creaTimer (tempo){
+    return function() {
+        setTimeout(() => {
+            console.log("Tempo scaduto");
+        }
+    )
+    }
+}
+const timer = creaTimer (2000);
+timer()
